@@ -1,0 +1,25 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.global-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: v.$color-bgcolor-pink;
+  place-items: center;
+
+  @include m.z-index(global-nav);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.global-nav__link {
+  display: block;
+  padding: 10px;
+}

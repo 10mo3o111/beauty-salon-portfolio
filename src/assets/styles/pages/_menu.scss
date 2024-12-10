@@ -1,0 +1,151 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.swiper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  box-shadow: 5px 0 10px #ccc;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 21px;
+  --swiper-navigation-top-offset: 50%;
+  --swiper-navigation-sides-offset: 10px;
+  --swiper-navigation-color: #e2a2b1;
+
+  z-index: 50;
+}
+
+.swiper-pagination {
+  --swiper-pagination-color: #e2a2b1;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bottom: -8px;
+
+  @include m.mq(xl-min) {
+    --swiper-pagination-bullet-size: 9px;
+  }
+}
+
+.menu__card {
+  position: relative;
+  display: flex;
+  background: v.$color-main-white;
+  overflow: hidden;
+  flex-direction: column-reverse;
+}
+
+.menu__card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+  content: "";
+  background-color: v.$color-main-white;
+  opacity: 0;
+  transform: scale(0);
+  aspect-ratio: 1 / 1;
+}
+
+.menu__card:hover::after,
+.menu__card:focus::after {
+  -webkit-animation-name: circle-disappear;
+  animation-name: circle-disappear;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes circle-disappear {
+  10% {
+    opacity: 0.1;
+    transform: scale(0.1);
+  }
+
+  80% {
+    opacity: 0.2;
+    transform: scale(1.5);
+  }
+
+  90% {
+    opacity: 0.1;
+    transform: scale(2);
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes circle-disappear {
+  10% {
+    opacity: 0.1;
+    transform: scale(0.1);
+  }
+
+  80% {
+    opacity: 0.2;
+    transform: scale(1.5);
+  }
+
+  90% {
+    opacity: 0.1;
+    transform: scale(2);
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes circle-disappear {
+  10% {
+    opacity: 0.1;
+    transform: scale(0.1);
+  }
+
+  80% {
+    opacity: 0.2;
+    transform: scale(1.5);
+  }
+
+  90% {
+    opacity: 0.1;
+    transform: scale(2);
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+.menu__content {
+  padding: 30px;
+}

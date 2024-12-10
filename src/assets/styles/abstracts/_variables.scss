@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+//ブレイクポイント=================
+$breakpoints: (
+  "sm-min": "screen and (min-width:479px)",
+  // "sm-max": "screen and (max-width:478px)",
+  "md-min": "screen and (min-width:768px)",
+  // "md-max": "screen and (max-width:767px)",
+  "lg-min": "screen and (min-width:992px)",
+  // "lg-max": "screen and (max-width:991px)",
+  "xl-min": "screen and (min-width:1131px)",
+  // "xl-max": "screen and (max-width:1130px)",
+);
+
+//z-index   ======================
+$layer: (
+  sk-circle: 101,
+  curtain: 100,
+  hamburger: 50,
+  global-nav: 49,
+  topPage: 35,
+  blog: 10,
+  default: 1,
+  header: -1,
+);
+
+//フォント関係の設定===============
+$font-base: "Noto Serif JP", serif;
+$font-serif: "Parisienne", cursive;
+
+//色関係の設定=====================
+// サイトカラー
+$color-main: #e2a2b1;
+$color-main-white: #fff;
+$color-bgcolor-pink: rgb(226 162 178 / 80%);
+$color-bgcolor-white: #f8f9fa;
+$color-linecolor: #666;
+$color-linecolor-bright: #ccc;
+$color-linecolor-dark: #999;
+
+// フォントカラー
+$color-font: #555;
+$color-font-black: #200;
+$color-font-white: #fff;
+$color-font-pink: #e2a2b1;
+$color-font-darkpink: #e91a82;

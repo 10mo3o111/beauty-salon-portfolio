@@ -1,0 +1,26 @@
+{
+  "name": "beauty-salon",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sass": "^1.81.0",
+    "stylelint": "^16.11.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "stylelint-order": "^6.0.4",
+    "vite": "^5.4.11"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "masonry-layout": "^4.2.2",
+    "normalize.css": "^8.0.1",
+    "spinkit": "^2.0.1",
+    "swiper": "^11.1.15"
+  }
+}

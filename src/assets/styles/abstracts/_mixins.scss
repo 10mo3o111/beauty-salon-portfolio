@@ -1,0 +1,23 @@
+@use "sass:map";
+@use "./variables" as v;
+
+//ブレイクポイント=================
+@mixin mq($breakpoint: md-min) {
+  @media #{map.get(v.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+// ===============================
+// @include m.mq(md-min){}
+// ===============================
+
+//z-index   ======================
+@mixin z-index($key) {
+  z-index: map.get(v.$layer, $key);
+}
+
+// ===============================
+// .default {
+//   @include m.z-index(modal);
+// }
+// ===============================

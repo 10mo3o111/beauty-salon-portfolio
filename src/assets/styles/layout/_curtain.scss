@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.curtain {
+  position: fixed;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+
+  @include m.z-index(curtain);
+}
+
+.sk-circle {
+  @include m.z-index(skCircle);
+}
+
+.sk-circle.--open {
+  display: none;
+}
+
+.curtain__left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: v.$color-main;
+  transition: width 0.8s;
+
+  @include m.z-index(curtain);
+}
+
+.curtain__right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  background-color: v.$color-main;
+  transition: width 0.8s;
+
+  @include m.z-index(curtain);
+}
+
+.curtain__left.--open {
+  width: 0;
+}
+
+.curtain__right.--open {
+  width: 0;
+}

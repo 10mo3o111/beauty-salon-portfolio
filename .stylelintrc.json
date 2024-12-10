@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order"
+  ],
+  "rules": {
+    "property-no-vendor-prefix": null,
+    "at-rule-no-vendor-prefix": null,
+    "selector-class-pattern": "^[a-z]([a-z0-9]*)(__[a-z0-9]+)?(--[a-z0-9]+)?$",
+    "scss/double-slash-comment-empty-line-before": null,
+    "scss/double-slash-comment-whitespace-inside": null,
+
+    "order/properties-order": [
+      "position",
+      "top",
+      "right",
+      "bottom",
+      "left",
+      "display",
+      "flex",
+      "grid",
+      "width",
+      "height",
+      "max-width",
+      "max-height",
+
+      "margin",
+      "padding",
+      "border",
+      "border-radius",
+      "box-sizing",
+
+      "font-size",
+      "font-family",
+      "font-weight",
+      "line-height",
+      "text-align",
+      "letter-spacing",
+      "text-transform",
+
+      "color",
+      "background",
+      "background-color",
+      "background-image",
+      "box-shadow",
+      "text-shadow",
+      "opacity",
+
+      "transition",
+      "transform",
+      "animation",
+      "cursor",
+      "visibility",
+
+      "z-index",
+      "overflow",
+      "resize",
+      "user-select"
+    ]
+  }
+}

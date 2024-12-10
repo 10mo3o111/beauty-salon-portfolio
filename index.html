@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>女性向けサイト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="curtain" role="status" aria-live="polite">
+      <span class="curtain__text">ローディング中</span>
+      <div class="curtain__left"></div>
+      <div class="curtain__right"></div>
+      <div class="sk-circle" aria-hidden="true">
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+        <div class="sk-circle-dot"></div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__inner">
+        <div class="header__title-wrap">
+          <h1 class="header__title">
+            <span class="header__title-text">Beautiful Days</span>
+            <span class="header__title-letter" aria-hidden="true">B</span>
+            <span class="header__title-letter" aria-hidden="true">e</span>
+            <span class="header__title-letter" aria-hidden="true">a</span>
+            <span class="header__title-letter" aria-hidden="true">u</span>
+            <span class="header__title-letter" aria-hidden="true">t</span>
+            <span class="header__title-letter" aria-hidden="true">i</span>
+            <span class="header__title-letter" aria-hidden="true">f</span>
+            <span class="header__title-letter" aria-hidden="true">u</span>
+            <span class="header__title-letter" aria-hidden="true">l</span>
+            <br class="header__title-letter --break" role="presentation" />
+            <span class="header__title-letter --space" aria-hidden="true"
+              >&nbsp;</span
+            >
+            <span class="header__title-letter" aria-hidden="true">D</span>
+            <span class="header__title-letter" aria-hidden="true">a</span>
+            <span class="header__title-letter" aria-hidden="true">y</span>
+            <span class="header__title-letter" aria-hidden="true">s</span>
+          </h1>
+          <p class="header__subTitle">エステサロン</p>
+        </div>
+      </div>
+
+      <div class="scroll-icon">
+        <div class="scroll-icon-line-mask">
+          <div class="scroll-icon-line"></div>
+        </div>
+        <div class="scroll-icon-triangle">
+          <div class="scroll-icon-triangle-mask first">
+            <div class="scroll-icon-triangle-line first"></div>
+          </div>
+          <div class="scroll-icon-triangle-mask right">
+            <div class="scroll-icon-triangle-line right"></div>
+          </div>
+          <div class="scroll-icon-triangle-mask left">
+            <div class="scroll-icon-triangle-line left"></div>
+          </div>
+          <div class="scroll-icon-triangle-mask last">
+            <div class="scroll-icon-triangle-line last"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <button
+      type="button"
+      class="hamburger"
+      aria-expanded="false"
+      aria-controls="menu"
+      aria-label="サイト内リンク一覧"
+    ></button>
+    <nav class="global-nav" id="menu" hidden aria-label="メインナビゲーション">
+      <ul class="global-nav__lists">
+        <li><a class="global-nav__link" href="#">Top</a></li>
+        <li><a class="global-nav__link" href="#">About</a></li>
+        <li><a class="global-nav__link" href="#">Menu</a></li>
+        <li><a class="global-nav__link" href="#">Contact</a></li>
+        <li><a class="global-nav__link" href="#">Blog</a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="main__inner">
+        <section class="menu">
+          <h2 class="menu__title">
+            <span class="menu__title-text">menu</span>
+            <span class="menu__title-letter" aria-hidden="true">M</span>
+            <span class="menu__title-letter" aria-hidden="true">e</span>
+            <span class="menu__title-letter" aria-hidden="true">n</span>
+            <span class="menu__title-letter" aria-hidden="true">u</span>
+          </h2>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper">
+              <!-- Slides -->
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/06.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/01.jpg" alt="" class="menu__image" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/09.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/02.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/07.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/08.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/11.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/10.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/04.jpg" alt="" />
+                </a>
+              </li>
+              <li class="swiper-slide">
+                <a class="menu__card" href="#">
+                  <div class="menu__content">
+                    <h3 class="menu__subTitle">Lorem ipsum dol</h3>
+                    <p class="menu__text">x,000 yen～</p>
+                  </div>
+                  <img src="images/03.jpg" alt="" />
+                </a>
+              </li>
+            </ul>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </section>
+        <section class="address">
+          <div class="address__content">
+            <h3 class="address__title">癒しの<br />プライベート空間</h3>
+            <p class="address__text">
+              エステサロン<br />
+              ビューティフルデイズは、<br />
+              がんばるあなたが<br />
+              ちょっと疲れた時に<br />
+              立ち寄れる<br />
+              ほっとする時間を<br />
+              つくります。
+            </p>
+          </div>
+
+          <div class="address__btn">
+            <a href="#" class="btn-address"><span>お店のご紹介</span></a>
+          </div>
+          <div class="address__img">
+            <img src="images/lead.jpg" alt="" />
+          </div>
+        </section>
+        <section class="blog">
+          <h2 class="blog__title">
+            <span class="blog__title-text">Blog</span>
+            <span class="blog__title-letter" aria-hidden="true">B</span>
+            <span class="blog__title-letter" aria-hidden="true">l</span>
+            <span class="blog__title-letter" aria-hidden="true">o</span>
+            <span class="blog__title-letter" aria-hidden="true">g</span>
+          </h2>
+          <div class="blog__grid">
+            <div class="blog__grid-item --rectangle">
+              <a class="blog__link --01" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    新しい季節、髪も生まれ変わる準備を。
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img src="images/blog01.jpg" alt="2025/08/23の記事の詳細を読む"
+              /></a>
+            </div>
+            <div class="blog__grid-item --rectangle">
+              <a class="blog__link --02" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    夏のダメージ、癒しと潤いを取り戻すケアを
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img src="images/blog02.jpg" alt="2025/07/24の記事の詳細を読む"
+              /></a>
+            </div>
+            <div class="blog__grid-item blog__grid-item__width2">
+              <a class="blog__link --03" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    お得なコスメキャンペーンを実施中！
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog03.jpg"
+                  alt="2025/07/12の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --04" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">夏のイチオシコスメ！</h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog04.jpg"
+                  alt="2025/06/17の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --05" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    しなやかさを感じる特別プログラム
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog05.jpg"
+                  alt="2025/06/06の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item blog__grid-item__width2">
+              <a class="blog__link --06" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">美容トータルサポート</h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog06.jpg"
+                  alt="2025/05/22の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --07" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">ブログはじめました</h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog07.jpg"
+                  alt="2025/05/10の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --08" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    至福の時間で美しさを引き出す
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog09.jpg"
+                  alt="2025/04/26の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item blog__grid-item__width2">
+              <a class="blog__link --09" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">本日のお客様</h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog10.jpg"
+                  alt="2025/04/13の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --10" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    ビューティープランをご提案
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog11.jpg"
+                  alt="2025/04/03の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item rectangle">
+              <a class="blog__link --11" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    新たなスタートを迎えるご準備はお済みでしょうか？
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog08.png"
+                  alt="2025/03/10の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --12" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">
+                    忙しい毎日に、上質なひとときを
+                  </h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog12.jpg"
+                  alt="2025/02/13の記事の詳細を読む"
+                />
+              </a>
+            </div>
+            <div class="blog__grid-item">
+              <a class="blog__link --13" href="#">
+                <div class="blog__grid-card">
+                  <h3 class="blog__grid-card-title">新春のご挨拶</h3>
+                  <p class="blog__grid-card-text">Read More</p>
+                </div>
+                <img
+                  src="images/blog13.jpg"
+                  alt="2025/01/10の記事の詳細を読む"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <div></div>
+    <footer class="footer">
+      <div class="footer__inner">
+        <h2 class="footer__title">
+          <span class="footer__sub-title">癒しのエステサロン</span>
+          <span class="footer__main-title">Beautiful Days</span>
+        </h2>
+        <nav aria-label="フッターナビゲーション" class="footer__nav-wrap">
+          <ul class="footer__nav">
+            <li><a href="#">Top</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </nav>
+        <div class="copyright"><small>&#169;Beautiful days</small></div>
+      </div>
+      <button
+        class="footer__topPage hidden"
+        aria-label="ページの先頭に戻る"
+      ></button>
+    </footer>
+    <script type="module" src="src/js/main.js"></script>
+  </body>
+</html>

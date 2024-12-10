@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.main {
+  padding: 50px 30px 70px;
+  background-color: v.$color-bgcolor-white;
+  margin-top: 100vh;
+
+  @include m.mq("lg-min") {
+    padding: 70px;
+  }
+}

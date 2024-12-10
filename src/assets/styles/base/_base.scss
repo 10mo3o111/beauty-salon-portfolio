@@ -1,0 +1,78 @@
+@use "../abstracts/variables" as v;
+@use "./typography" as t;
+
+/**
+* *******************************
+* ページ全体に関わるcssの設定
+*********************************/
+html {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  word-wrap: break-word;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 20px 8px;
+  border: 1px solid v.$color-linecolor-bright;
+  border-radius: 4px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+iframe {
+  width: 100%;
+  border: none;
+}
+
+address {
+  font-style: normal;
+}
